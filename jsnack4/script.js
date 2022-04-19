@@ -2,7 +2,7 @@
 //e calcola la somma di tutte le cifre che compongono il numero.
 
 //chiedo una somma di quattro numeri con prompt
-const userNumber = parseInt(prompt("dimmi un numero con quattro cifre"));
+const userNumber = prompt("dimmi un numero con quattro cifre");
 console.log(userNumber)
 
 
@@ -11,3 +11,18 @@ console.log(userNumber)
 
 const userNumberSplit = userNumber.split('');
 console.log(userNumberSplit);
+
+//ora devo fare la somma tra gli elementi splittati
+
+//metto la costante per la somm
+//let sumUserNumberSplit= "";
+//creo ciclo for per la somma
+//for (let i = 0; i = userNumberSplit.length; i++) {
+   // console.log (i);
+   // sumUserNumberSplit = userNumberSplit + i;
+//}
+//stampo la somma
+//console.log(sumUserNumberSplit);
+
+//
+
