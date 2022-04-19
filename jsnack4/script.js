@@ -9,5 +9,5 @@ console.log(userNumber)
 
 //considero il prompt una stringa, di modo che il numero che mi dirà possa essere scisso in quattro elementi
 
-const userNumberSplit = userNumber.split("","","","")
+const userNumberSplit = userNumber.split('');
 console.log(userNumberSplit);
