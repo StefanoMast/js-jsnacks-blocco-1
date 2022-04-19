@@ -1,28 +1,22 @@
 //jsnack4. Chiedi un numero di 4 cifre all'utente
 //e calcola la somma di tutte le cifre che compongono il numero.
 
-//chiedo una somma di quattro numeri con prompt
-const userNumber = prompt("dimmi un numero con quattro cifre");
-console.log(userNumber)
+//utilizzo metodo trovato su stack overflow 
+//chiedo numero di quattro cifre all'utente
+let userNumber = parseInt(prompt("dimmi un numero di quattro cifre"));
+console.log(userNumber);
 
+//calcolo la somma di tutte le cifre che compongono il numero
+//metto la somma a 0
+sumUserNumber = 0;
 
+//utilizzo while per far finire il ciclo, altrimenti va in loop
+while (userNumber) {
+    sumUserNumber += userNumber % 10;
+    userNumber = Math.floor(userNumber / 10);
+}
 
-//considero il prompt una stringa, di modo che il numero che mi dirà possa essere scisso in quattro elementi
-
-const userNumberSplit = userNumber.split('');
-console.log(userNumberSplit);
-
-//ora devo fare la somma tra gli elementi splittati
-
-//metto la costante per la somm
-//let sumUserNumberSplit= "";
-//creo ciclo for per la somma
-//for (let i = 0; i = userNumberSplit.length; i++) {
-   // console.log (i);
-   // sumUserNumberSplit = userNumberSplit + i;
-//}
 //stampo la somma
-//console.log(sumUserNumberSplit);
 
-//
+console.log(sumUserNumber);
 
